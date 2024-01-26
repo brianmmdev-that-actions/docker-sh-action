@@ -1,0 +1,13 @@
+name: 'THAT Public Bash Action'
+description: 'Not THIS one...'
+
+inputs:
+  name:
+    description: 'Who are we saying hello to?'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.name }}
