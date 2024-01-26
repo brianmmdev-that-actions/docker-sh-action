@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 WORKDIR /scripts
 
-COPY entrypoint.sh entrypoint.sh
+COPY entrypoint.sh /scripts/entrypoint.sh
 
 ENTRYPOINT [ "/scripts/entrypoint.sh" ]
